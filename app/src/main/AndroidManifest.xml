@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afrin.trafficteacher">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AllGarageInfo"></activity>
+        <activity android:name=".QuizActivityImage" />
+        <activity android:name=".StartQuiz" />
+        <activity android:name=".ChooseQuiz" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".AllRouteInfo" />
+        <activity android:name=".All_Details" />
+        <activity android:name=".Vehicle_reg_classification" />
+        <activity android:name=".Vehicle_reg" />
+        <activity android:name=".Driving_license" />
+        <activity android:name=".New_rule" />
+        <activity android:name=".Dhara_rule" />
+        <activity android:name=".Fine" />
+        <activity android:name=".TrafficRule" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TrafficSignSpeak" />
+        <activity android:name=".TrafficSignClassification" />
+        <activity android:name=".TrafficSignNoSpeak" />
+        <activity android:name=".TrafficSignAlert" />
+        <activity
+            android:name=".ShowTrafficMap"
+            android:label="@string/title_activity_show_traffic_map" />
+    </application>
+
+</manifest>
